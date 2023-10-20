@@ -9,6 +9,8 @@ public class DeleteFile {
         deleteFile();
     }
     public static void deleteFile(){
+
+
         File file = new File(path,filename);
         System.out.println(file.delete()?"ok":"sad");
     }
