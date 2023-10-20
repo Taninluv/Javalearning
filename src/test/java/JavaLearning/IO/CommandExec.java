@@ -13,8 +13,6 @@ public class CommandExec {
 //            byteArrayOutputStream.write(cache,0,readLen);
             byteArrayOutputStream.write(cache);
 //            System.out.println((char) readLen);
-
-
         }
         System.out.println(byteArrayOutputStream);
     }
