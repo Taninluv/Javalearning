@@ -10,28 +10,32 @@ package Proxy.StaticProxy;
 //        我们想要静态代理的好处，又不想要静态代理的缺点，所以 , 就有了动态代理 !
 public class StaticProxy {
     private Host host;
-    public StaticProxy(){}
-    public StaticProxy(Host host){
-        this.host=host;
+
+    public StaticProxy() {
     }
-    public void rent(){
+
+    public StaticProxy(Host host) {
+        this.host = host;
+    }
+
+    public void rent() {
         host.rent();
         contract();
         fare();
     }
 
     // 看房
-    public void seeHouse(){
+    public void seeHouse() {
         System.out.println("中介带你看房");
     }
 
     // 收中介费
-    public void fare(){
+    public void fare() {
         System.out.println("收中介费");
     }
 
     // 签租赁合同
-    public void contract(){
+    public void contract() {
         System.out.println("签租赁合同");
-
     }
+}
